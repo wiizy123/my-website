@@ -1,0 +1,243 @@
+body{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+    background-color: aliceblue;
+}
+/* Global */
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+.button_1{
+    height: 36px;
+    background: orange;
+    border: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+    
+}
+
+.dark{
+    padding: 15px;
+    background: brown;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/*Header*/
+header{
+    background: #35424a;
+    color: white;
+    padding-top: 30px;
+    margin-top: -20px;
+    min-height: 70px;
+    border-bottom: orange 3px solid;
+}
+header a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    
+}
+header ul{
+    margin-right: -520px;
+    margin-left: -40px;
+    margin-bottom: 40px;
+    margin-top: -60px;
+    padding: 10px 600px;    
+    
+}
+header li{
+    float: right;
+    display: inline;
+    padding-left: 5%;
+    padding-right: 8%;
+}
+header .highlight {
+    color: orange;
+    font-weight: bold;
+}
+header .current a{
+    color: orange;
+    font-weight: bold;
+}
+header a:hover{
+    color: #cccccc;
+    font-size: bold;
+}
+
+/*Showcase*/
+#showcase{
+    min-height: 400px;
+    background: url('../images/HERH.webp');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 100% 100%;
+    text-align: center;
+    color: black;
+}
+#showcase h1{
+    margin-top: 60px;
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+#showcase p{
+    font-size: 30px;
+    color: black;
+    font-weight: 500;
+}
+/*newsletter*/
+#newsletter{
+    padding: 15px;
+    color: white;
+    background:  #35424a;
+}
+#newsletter h1{
+    float: left;
+}
+#newsletter form{
+    float: right;
+    margin-top: 25px;
+}
+#newsletter input[type="email"]{
+    padding: 4px;
+    height: 25px;
+    width: 250px;
+}
+/*boxes*/
+#boxes{
+    margin-top: 40px;
+}
+#boxes .box{
+    float: left;
+    align-items: center;
+    width: 30%;
+    padding: 15px;
+    
+}
+#boxes .box img{
+    width: 100px;
+}
+/*sidebar*/
+aside#sidebar{
+    float:right;
+    width: 30%;
+    margin-top: 30px;
+}
+aside#sidebar .quote input{
+    width: 90%;
+    height: 3vh;
+    padding: 5px;
+}
+aside#sidebar .quote textarea{
+    width: 90%;
+    height: 20vh;
+    padding: 5px; 
+}
+/*main-col*/
+article#main-col{
+    float: left;
+    width: 65%;
+}
+
+
+
+/*Services*/
+ul#services li{
+    list-style: none;
+    padding: 20px;
+    border: #cccccc solid 1px;
+    margin-bottom: 5px;
+    background: seagreen;
+}
+
+footer{
+    padding: 20px;
+    margin-top: 20px;
+    color:  #35424a;
+    background-color: black;
+    text-align: center;
+}   
+/*media queries*/
+@media(max-width: 768px){
+    header #branding{
+        float: none;
+        text-align: center;
+        width: 150px;
+    }
+    header nav li{
+        float: none;
+        text-align: left;
+        width: 150px;
+        padding-top: 50px;
+    }
+    header nav ul{
+    margin-right: -520px;
+    margin-left: -190px;
+    margin-bottom: 90px;
+    margin-top: -130px;
+    padding: 10px 600px;    
+    
+    }
+    article#main-col{
+        float: none;
+        text-align: center;
+        width: 350px;
+        padding-left: 20px;
+    
+    }
+    aside#sidebar{
+        float: none;
+        text-align: center;
+        width: 310px;
+        padding-left: 60px;
+    
+    }
+    #newsletter hi{
+        float: none;
+        text-align: center;
+        width: 150px;
+    }
+    #newsletter form{
+        float: none;
+        text-align: center;
+        width: 100px;
+    }
+    #boxes .box{
+        float: none;
+        text-align: center;
+        width: 100px;
+        padding: 20px;
+        padding-left: 150px;
+    }
+    header{
+        padding-bottom: 20px;
+ 
+    }
+    
+    header nav{
+        float: none;
+        text-align: center;
+        width: 100px;
+        padding-bottom: -50px;
+        margin-bottom: -110px; 
+    }
+    #newsletter button{
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-left: 70px;
+        background: red;
+        margin-left: 120px;
+    }
+    #newsletter form input[type="email"]{
+        width: 320px;
+        margin-bottom: 5px;
+    }
+}
